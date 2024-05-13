@@ -4,20 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Click</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <img src="img/golden/4.png" alt="" id="theImage" style="width: 200px; height: auto;">
-    <button id="clickOne" data-picture="img/golden/5.png">BUTTON ONE</button>
-    <button id="clickTwo" data-picture="img/golden/6.png">BUTTON Two</button>
+    <img src="img/silver/1T.png" alt="" id="theImage" style="width: 700px; height: auto;">
+    <button id="clickOne" class="custom-dot silver" data-picture="img/silver/1T.png"></button>
+    <button id="clickTwo" class="custom-dot gold" data-picture="img/golden/custom-gold.png"></button>
+    <button id="clickThree" class="custom-dot red" data-picture="img/red/custom-red.png"></button>
 
     <script>
       // save the buttons in a variable
       var buttonOne = document.getElementById("clickOne");
       var buttonTwo = document.getElementById("clickTwo");
+      var buttonThree = document.getElementById("clickThree");
 
       // attach the event listener to all your buttons
       buttonOne.addEventListener("click", clickedButton);
       buttonTwo.addEventListener("click", clickedButton);
+      buttonThree.addEventListener("click", clickedButton);
 
       // the code
       function clickedButton() {

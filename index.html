@@ -18,16 +18,18 @@
       <a href="#costumization">Costumization</a>
       <a href="#app">App</a>
     </nav>
+
+    <a href="#" class="fixed-button up button-text">Shop Pod<span class="arrow">&#x279D;</span></a>
+    <a href="bloglist.html" class="fixed-button button-text">Our Blog<span class="arrow">&#x279D;</span></a>
+
   </header>
 
   <main>
-    <a href="#" class="fixed-button up button-text">Shop Pod<span class="arrow">&#x279D;</span></a>
-    <a href="bloglist.html" class="fixed-button button-text">Our Blog<span class="arrow">&#x279D;</span></a>
 
     <section class="wrapper">
       <h1>Your ultimate<br>protection companion.</h1>
       <p class="hero-text">A beacon of hope and security for those navigating precarious situations.</p>
-      <img src="img/silver/1T.png" alt="Silver pod security braclet prospective" style="max-width:600px;">
+      <img src="img/silver/1T.png" alt="Silver pod security braclet prospective" style="max-width:600px; height:auto;" width="868" height="991">
     </section>
 
     <section class="wrapper">
@@ -54,7 +56,7 @@
     <section class="wrapper">
 
 
-      <img src="img/silver/3T.png" alt="The silver pod braclet" style="max-width:800px;">
+      <img src="img/silver/3T.png" alt="The silver pod braclet" style="max-width:800px;" width="835" height="756" loading="lazy">
 
 
       <div class="features-grid">
@@ -100,33 +102,46 @@
 
     <section class="wrapper spacing" id="costumization">
       <h2 class="titles">Customize</h2>
-      <p>...</p>
-      <img src="img/golden/1Tgolden.png" alt="The silver pod braclet" style="max-width:700px;">
+      <p class="description">Pod isn't just a one-size-fits-all solution; it's tailored to meet your unique needs and
+        preferences to provide the support you need, exactly when you need it.</p>
+
+      <!-- javascript -->
+
+      <img src="img/silver/1T.png" alt="" id="theImage" style="width: 500px; height: auto; margin: 0 130px;" loading="lazy">
       <div class="custom-colors">
-        <span class="custom-dot silver"></span>
-        <span class="custom-dot gold"></span>
-        <span class="custom-dot red"></span>
+        <button id="clickOne" class="custom-dot silver" data-picture="img/silver/1T.png"></button>
+        <button id="clickTwo" class="custom-dot gold" data-picture="img/golden/custom-gold.png"></button>
+        <button id="clickThree" class="custom-dot red" data-picture="img/red/custom-red.png"></button>
       </div>
+
+      <script>
+        // save the buttons in a variable
+        var buttonOne = document.getElementById("clickOne");
+        var buttonTwo = document.getElementById("clickTwo");
+        var buttonThree = document.getElementById("clickThree");
+
+        // attach the event listener to all your buttons
+        buttonOne.addEventListener("click", clickedButton);
+        buttonTwo.addEventListener("click", clickedButton);
+        buttonThree.addEventListener("click", clickedButton);
+
+        // the code
+        function clickedButton() {
+          theImage.src = this.dataset.picture;
+        }
+      </script>
     </section>
 
-<!-- 
-    <section class="wrapper background">
-      <h2 class="titles">Privacy</h2>
-      <h4 class="section-text">Ensuring Peace of Mind</h4>
-      <p class="section-text">With Pod, you can rest assured that your personal safety
-        is protected without sacrificing your privacy.
+    <div id="app"> <img src="img/Mockup-02.png" alt="Screens of the app Pod" style="max-width: 1200px;" loading="lazy"></div>
+    <article class="wrapper">
+      <h2 class="titles">Stay in control.</h2>
+      <p class="description">With Pod, you can rest assured that your personal safety is protected without sacrificing
+        your privacy. Customize your Pod experience with tailored settings and add your trusted emergency contacts for
+        immediate assistance.
       </p>
-    </section>
-
-    <section class="wrapper background" id="app">
-      <h2 class="titles">App</h2>
-      <h4 class="section-text">Stay in control of your safety</h4>
-      <p class="section-text">Customize your Pod experience with tailored
-        settings and add your trusted emergency contacts
-        for immediate assistance.
-      </p>
-      <a href="#">Download the app</a>
-    </section> -->
+      <a href="#" class="buttons button-text">Google Play<span class="arrow-app">&#x279D;</span></a>
+      <a href="bloglist.html" class="buttons button-text">App Store<span class="arrow-app">&#x279D;</span></a>
+    </article>
 
 
 
@@ -134,19 +149,19 @@
   </main>
 
   <footer>
-    <hr>
 
-    <p class="footer-text">more links</p>
+    <div class="footer-border">
+      <p class="footer-text">info</p>
 
-    <ul class="footer-links">
-      <li>Shipping</li>
-      <li>Return and Refund</li>
-      <li>Privacy Policy</li>
-      <li>Terms and Conditions</li>
-    </ul>
+      <ul class="footer-links">
+        <li>Shipping</li>
+        <li>Return and Refund</li>
+        <li>Privacy Policy</li>
+        <li>Terms and Conditions</li>
+      </ul>
+    </div>
 
-    <hr>
-    <p class="footer-text">POD <span class="symbol">&copy;</span> 2024</p>
+    <p class="footer-text">POD <span class="symbol">&copy;</span> 2024 — HIGH FIVE</p>
 
   </footer>
 
