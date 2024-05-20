@@ -15,129 +15,70 @@
     <a href="index.html"><img src="img/pod-logo.png" alt="pod logo" class="align-start"></a>
 
     <a href="#" class="fixed-button up button-text">Homepage<span class="arrow">&#x279D;</span></a>
-    <a href="bloglist.html" class="fixed-button button-text">Our Blog<span class="arrow">&#x279D;</span></a>
+    <a href="bloglist.html" class="fixed-button button-text">Go to chart<span class="arrow">&#x279D;</span></a>
 
   </header>
 
   <main>
 
-    <!-- <section class="wrapper">
-      <h1>Your ultimate<br>protection companion.</h1>
-      <p class="hero-text">A beacon of hope and security for those navigating precarious situations.</p>
-      <img src="img/silver/pod-safetybracelet-perspective.png"
-        alt="stainless steel silver safety bracelet unisex safety bracelet shot in perspective"
-        style="max-width:600px; height:auto;" width="868" height="991">
-    </section>
-
-    <section class="wrapper">
-      <p class="description">Our wearable technology is designed with safety and convenience in mind,
-        ensuring ease of use for individuals of all ages.
-        Whether you're commuting to work or exploring new environments,
-        Pod is your trusted companion for personal safety.
-      </p>
-    </section>
-
-    <div class="background">
-      <img src="img/icons.png" alt="buttons to signal out, reach out and cancel the distressed signal" class="icons"
-        width="922" height="58" style="height: auto;">
-    </div>
-
-    <section class="wrapper" id="features">
-      <h2 class="titles">Every second counts.</h2>
-      <p class="description">A single touch and Pod immediately emits a distress signal, alerting emergency services to
-        your location. In the blink of an eye, help is on the way, providing you with the peace of mind that assistance
-        is readily available when you need it most.
-      </p>
-
-    </section>
-
-    <section class="wrapper">
-
-
-      <img src="img/silver/pod-safetybracelet-front.png"
-        alt="polished stainless steel silver unisex safety bracelet front" style="max-width:800px;" width="835"
-        height="756" loading="lazy">
-
-
-      <div class="features-grid">
-
-        <span class="dot feat-dot-one"></span>
-        <article class="features feat-one">
-          <h4>Instant Distress Signal</h4>
-          <p>With just a simple press,
-            Pod emits a distress signal that is immediately pinpointed by emergency services.
-            Your exact location is swiftly transmitted,
-            ensuring help reaches you when every second counts.
-          </p>
-        </article>
-
-        <span class="dot feat-dot-two"></span>
-        <article class="features feat-two">
-          <h4>Discreet Design</h4>
-          <p>Pod is designed to be discreet and stylish,
-            blending seamlessly with your attire.
-            Whether you're on a night out or navigating unfamiliar territory,
-            Pod remains by your side, ready to spring into action at a moment's notice.
-          </p>
-        </article>
-
-        <span class="dot feat-dot-three"></span>
-        <article class="features feat-three">
-          <h4>24/7 Support</h4>
-          <p>Rest assured knowing that Pod is always vigilant.
-            Our dedicated team of professionals monitors distress signals
-            round the clock, ensuring prompt assistance whenever you need it.
-          </p>
-        </article>
-        <span class="dot feat-dot-four"></span>
-        <article class="features feat-four">
-          <h4>Customizable settings</h4>
-          <p>Tailor Pod to suit your individual needs with customizable settings.
-            From adjusting sensitivity levels to setting up emergency contacts,
-            Pod puts you in control of your safety.
-          </p>
-        </article>
-      </div>
-    </section> -->
-
     <section class="wrapper spacing shop">
-  
-      <!-- javascript -->
 
-      <img src="img/silver/pod-safetybracelet-perspective.png"
-        alt="customizable pod unisex safety bracelet shot in perspective" id="theImage"
-        style="width: 500px; height: auto; margin: 0 130px;" loading="lazy">
-      <div class="custom-colors">
-        <button id="clickOne" class="custom-dot silver"
-          data-picture="img/silver/pod-safetybracelet-perspective.png"></button>
-        <button id="clickTwo" class="custom-dot gold"
-          data-picture="img/golden/pod-safetybracelet-perspective-gold.png"></button>
-        <button id="clickThree" class="custom-dot red"
-          data-picture="img/red/pod-safetybracelet-perspective-red.png"></button>
-      </div> 
+      <div class="grid-shop">
 
-      <script>
-        // save the buttons in a variable
-        var buttonOne = document.getElementById("clickOne");
-        var buttonTwo = document.getElementById("clickTwo");
-        var buttonThree = document.getElementById("clickThree");
+        <h1>Pod bracelet</h1>
+        <h2>€59,99</h2>
 
-        // attach the event listener to all your buttons
-        buttonOne.addEventListener("click", clickedButton);
-        buttonTwo.addEventListener("click", clickedButton);
-        buttonThree.addEventListener("click", clickedButton);
+        <!-- javascript -->
 
-        // the code
-        function clickedButton() {
-          theImage.src = this.dataset.picture;
-        }
-      </script>
+        <img src="img/silver/pod-safetybracelet-perspective.png"
+          alt="customizable pod unisex safety bracelet shot in perspective" id="theImage"
+          style="width: 500px; height: auto; margin: 0;" loading="lazy">
+        <div class="java-text">
+          <h3>Color - Silver</h3>
+          <button id="clickOne" class="custom-dot silver"
+            data-picture="img/silver/pod-safetybracelet-perspective.png"></button>
+          <button id="clickTwo" class="custom-dot gold"
+            data-picture="img/golden/pod-safetybracelet-perspective-gold.png"></button>
+          <button id="clickThree" class="custom-dot red"
+            data-picture="img/red/pod-safetybracelet-perspective-red.png"></button>
+        </div>
+
+        <script>
+          // save the buttons in a variable
+          var buttonOne = document.getElementById("clickOne");
+          var buttonTwo = document.getElementById("clickTwo");
+          var buttonThree = document.getElementById("clickThree");
+
+          // attach the event listener to all your buttons
+          buttonOne.addEventListener("click", clickedButton);
+          buttonTwo.addEventListener("click", clickedButton);
+          buttonThree.addEventListener("click", clickedButton);
+
+          // the code
+          function clickedButton() {
+            theImage.src = this.dataset.picture;
+          }
+        </script>
+
+        <section class="info-block">
+          <article class="shop-info">
+            <img src="img/Package.svg">
+            <h4>Free Delivery</h4>
+            <a href="#">Enter your Postal code for Delivery Availability</a>
+          </article>
+
+          <article class="shop-info">
+            <img src="img/ShoppingBag.svg">
+            <h4>Return Delivery</h4>
+            <a href="#">Free 30 days Delivery and Return. Details.</a>
+          </article>
+        </section>
+
+        <a class="buy-button" href="#">Buy</a>
+
+      </div>
+
     </section>
-
-   
-
-
-
 
   </main>
 
